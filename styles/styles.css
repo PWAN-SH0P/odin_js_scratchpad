@@ -1,0 +1,174 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+.navbar, .site_links, .user_info, .right_navbar, .left_navbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.user_info, .site_links{
+    padding-left: 0px;
+}
+
+.site_links{
+    gap: 10px;
+}
+
+.site_links a{
+    text-decoration: none;
+    color:white;
+}
+
+.site_links a:hover{
+    color: lightgray;
+}
+
+.navbar{
+    background-color: #24292f;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.left_navbar{
+    padding-left: 20px;
+    padding-bottom: 0px;
+    gap:10px;
+    justify-content: left;
+}
+
+
+
+.right_navbar{
+    padding-right: 20px;
+    justify-content: right;
+}
+
+.navbar_search{
+    background-color: #24292f;
+}
+
+.user_details{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px 1px;
+    width: fit-content;
+}
+
+.user_details_item{
+    margin: 15px auto;
+    border-bottom: 1px lightgray solid;
+}
+
+.user_details_item.last_dropdown_item{
+    border-bottom: none;
+}
+
+.user_details_item>ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.user_details_item>h2{
+    margin: 0px auto;
+}
+
+.action_dropdown{
+    display: inline;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    fill: #e4e4e4
+}
+
+.user_status{
+    border:1px lightgrey solid;
+    padding: 5px 10px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.user_details{
+    width: 250px;
+    position: absolute;
+    translate: -250px;
+    box-shadow: 2px 2px 5px #24292f9f;
+}
+
+.repo_actions{
+    margin: 0px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_header{
+    text-align: left;
+}
+
+.chapters{
+    background-color: #f8f8fa;
+    border: 1px #24292f solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page_content{
+    display: flex;
+    gap:80px;
+}
+
+.chapters details ul{
+    list-style-type: none;
+}
+
+.repo_nav{
+    display: flex;
+    list-style-type: none;
+    padding-left: none;
+    gap: 20px;
+}
+
+.page_content ul{
+    padding-left: 0px;
+    list-style: disc;
+}
+
+.ribbon, .tag{
+    box-sizing: content-box;
+    padding: 2px 5px;
+    background-color: #ecebeb;
+}
+
+.upper_ribbon, .repo_actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo_actions{
+    list-style-type: none;
+    gap:20px;
+}
+
+.action_container, .tag{
+    border: 1px #d5d5d5 solid;
+    border-radius: 10px;
+}
+
+.directory a{
+    color: blue;
+}
+
+.tag{
+    display: inline-block;
+}
